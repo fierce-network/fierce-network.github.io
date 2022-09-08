@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <link rel = "icon" href="https://i.imgur.com/QGKe9iP.jpg" type = "image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel = "icon" href="https://i.imgur.com/QGKe9iP.jpg" type = "image/x-icon">
 </head>
 <body>
-<link rel="stylesheet" href="css/index.css">
- <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="/css/anime_pages.css">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="https://fierce-network.github.io/">
+  <a class="navbar-brand" href="http://fierce-network.github.io">
     <img src="https://i.imgur.com/QGKe9iP.jpg" alt="Logo" style="width:40px;">
     Fierce Network</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -39,36 +40,38 @@
   </div> 
 </nav>
 <br>
-<div>
-<p id="para">Welcome To FIERCENETWORK Index :) Enjoy</p>
+<div id="con3">
+  <img id="anime" src="image" alt="86"><div id="titles">{title}</div>
+  <div id="info">
+    <strong>{title}</strong><br>
+    Synopsis : 
+    <div class="synopsis">
+      {synopsis}
 </div>
-<div>
-<button class="collapsible">♦️#-#-#-#-#♦️</button>
+<button class="collapsible">Download -:</button>
 <div class="content">
-  <p class="titles">📌<a href="animes/5CMPS.html" target="_blank">5 Centimeters Per Second</a></p>
-  <p class="titles">📌<a href="animes/86ES.html" target="_blank">86 Eighty Six</a></p>
-</div>
-<button class="collapsible">♦️AA-A-A-A-A♦️</button>
-<div class="content">
-  <p class="titles">📌<a href="animes/Aharen-san wa hakarenai.html" target="_blank">Aharen San Wa Hakarenai/a></p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-</div>
+    {link}
+    </div>
+<div style="margin-bottom: 75px;">
+  </div>
+  <div>
+    <a href="https://t.me/fierce_requests" class="fa fa-telegram"><span  style="font-family: Poppins;font-size : medium; color : white; padding : 10px"> Telegram</span></a><br>
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>  
 </body>
 </html>

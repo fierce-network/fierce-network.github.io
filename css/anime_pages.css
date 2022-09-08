@@ -7,6 +7,12 @@
      padding: 3px;
 	
 }
+.synopsis {
+	text-shadow: 0px; 
+	font-family : 'Comic Neue', cursive; 
+	font-size: medium; 
+	color: whitesmoke;
+}
 
 	#con3 {
 		margin: 20px;
